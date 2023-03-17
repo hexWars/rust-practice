@@ -1,8 +1,8 @@
 fn main() {
-    let s = sum(1, 2);
-    assert_eq!(s, 3);
-}
+    let t = (String::from("hello"), String::from("world"));
 
-fn sum(x: i32, y: i32) -> i32 {
-    x + y
+    // 填空，不要修改其它代码
+    let (s1, s2) = &t;
+
+    println!("{:?}, {:?}, {:?}", s1, s2, t); // -> "hello", "world", ("hello", "world")
 }
